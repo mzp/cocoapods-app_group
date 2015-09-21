@@ -1,7 +1,2 @@
-require "cocoapods/app_group/version"
-
-module Cocoapods
-  module AppGroup
-    # Your code goes here...
-  end
-end
+require 'cocoapods/app_group/version'
+require 'pod/command/app_group'
