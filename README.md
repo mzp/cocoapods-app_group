@@ -9,7 +9,6 @@ Because app group is strong bound to AppleID, it is hard to distribute iOS proje
  * CocoaPods 0.36
 
 ## Installation
-not yet.
 
 ```
 gem install cocoapods-app_group
@@ -80,8 +79,10 @@ import AppGroup
 ```
 
 ## Thanks
-
 This was built with a lot of help from [@banjun](https://github.com/banjun).
+
+## How to work
+I explain how to work at [Japanese document](http://qiita.com/mzp/items/b5a9dda2d01e18655cbf).
 
 ## License
 
