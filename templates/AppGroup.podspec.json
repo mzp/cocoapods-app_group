@@ -1,0 +1,21 @@
+{
+  "name": "AppGroup",
+  "version": "1.0.0",
+  "summary": "Injected podspec used by CocoaPods-AppGroup plugin.",
+  "description": "This is intended to be used as an injected podspec template \n used by the [CocoaPods-ApGroup plugin](https://github.com/mzp/cocoapods-app_group).\n\n It should *not* be referenced outside of that context. \n",
+  "homepage": "https://github.com/mzp/cocoapods-app_group",
+  "license": {
+    "type": "MIT",
+    "text": "MIT LICENSE Found in the repo"
+  },
+  "authors": {
+    "mzp": "mzpppp@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/mzp/cocoapods-app_group.git",
+    "tag": "23"
+  },
+  "source_files": "*.{h,m,swift}",
+  "frameworks": "Foundation",
+  "requires_arc": true
+}
