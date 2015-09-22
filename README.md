@@ -1,39 +1,87 @@
-# Cocoapods::AppGroup
+# cocoapods-app_group
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/cocoapods/app_group`. To experiment with that code, run `bin/console` for an interactive prompt.
+This plugin provide customizable app group.
 
-TODO: Delete this and the text above, and describe your gem
+Because app group is strong bound to AppleID, it is hard to distribute iOS project using app group. This plugin enable each user to customize app group name at setup phase. This make easy to distribute your iOS project.
+
+## Requirements
+
+ * CocoaPods 0.36
 
 ## Installation
+not yet.
 
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'cocoapods-app_group'
+```
+gem install cocoapods-app_group
 ```
 
-And then execute:
+## Setup
+### 1. Setup Podfile
+Put followings to `Podfile`:
 
-    $ bundle
+```ruby
+plugin 'cocoapods-app_group'
 
-Or install it yourself as:
+# or specify targets
+# plugin 'cocoapods-app_group', targets: ['Foo', 'Bar']
+```
 
-    $ gem install cocoapods-app_group
+Then running `pod install` will prompt for the keys not yet set and you can ensure everyone has the same setup.
 
-## Usage
+### 2. Save app group name
+Save group name by running following command:
 
-TODO: Write usage instructions here
+```
+pod app-group GROUP_NAME
+```
 
-## Development
+### 3. Generate wrapper class
+Generate wrapper class by running following command:
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+```
+pod install
+```
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+### 4. Enable app group of each target
+Open `*.xcworkspace` and enable app group of each target. Use `group.$(APP_IDENTIFIER)` as app group name.
 
-## Contributing
+### 5. Write code
+Write code using wrapper class:
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/cocoapods-app_group. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
+```objc
+#import <Foundation/Foundation.h>
 
+@interface AppGroup : NSObject
++ (NSString *)appGroupID;
++ (NSString *)pathForResource:(NSString *)subpath;
++ (NSUserDefaults*)userDefaults;
+@end
+```
+
+## Using at swift project
+### Using the bridge header
+
+If you want to make your keys available to your whole project:
+
+1. Make sure you have a [bridging header](https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/BuildingCocoaApps/MixandMatch.html) already setup.
+2. In the bridging header, import the generated key file:
+```objectivec
+#import <AppGroup/AppGroup.h>
+```
+
+### Importing the framework
+
+If you've added the `use_frameworks!` and only want your Keys to be available in
+specific files, simply use Swift's `import` statement. The name of the generated
+module is `AppGroup`.
+
+```swift
+import AppGroup
+```
+
+## Thanks
+
+This was built with a lot of help from [@banjun](https://github.com/banjun).
 
 ## License
 
