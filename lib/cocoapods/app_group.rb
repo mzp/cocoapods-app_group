@@ -1,6 +1,6 @@
-require 'cocoapods/app_group/version'
 require 'cocoapods/app_group/hook'
 require 'cocoapods/app_group/setup'
-require 'cocoapods/app_group/template'
 require 'cocoapods/app_group/store'
+require 'cocoapods/app_group/template'
+require 'cocoapods/app_group/version'
 require 'pod/command/app_group'

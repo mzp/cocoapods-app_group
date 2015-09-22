@@ -18,6 +18,10 @@ module CocoaPods
       def content
         @content ||= File.read(path)
       end
+
+      def store
+        @store ||= Store.new
+      end
     end
   end
 end
