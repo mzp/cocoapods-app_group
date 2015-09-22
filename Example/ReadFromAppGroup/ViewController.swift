@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
-//  Example
+//  ReadFromAppGroup
 //
-//  Created by mzp on 9/21/15.
+//  Created by mzp on 9/22/15.
 //  Copyright © 2015 mzp. All rights reserved.
 //
 
@@ -10,12 +10,10 @@ import UIKit
 import AppGroup
 
 class ViewController: UIViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
         NSLog("%@", AppGroup.appGroupID())
-        AppGroup.userDefaults().setInteger(42, forKey: "answer")
-        // Do any additional setup after loading the view, typically from a nib.
+        NSLog("%d", AppGroup.userDefaults().integerForKey("answer"))
     }
 
     override func didReceiveMemoryWarning() {

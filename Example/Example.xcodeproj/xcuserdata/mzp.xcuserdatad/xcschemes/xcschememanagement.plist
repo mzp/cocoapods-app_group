@@ -9,9 +9,19 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>ReadFromAppGroup.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>139C575D1BB16AFC0059D855</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>13B0ABFA1BB0070000891E04</key>
 		<dict>
 			<key>primary</key>
