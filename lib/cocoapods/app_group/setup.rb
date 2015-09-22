@@ -1,11 +1,12 @@
 module CocoaPods
   module AppGroup
     class Setup
-      PODSPEC_NAME = 'AppGroup.podspec.json'
-
       def call
         FileUtils.mkdir_p pod_path
-        Template.new(template(PODSPEC_NAME)).call pod_path.+(PODSPEC_NAME)
+
+        %w(AppGroup.podspec.json AppGroup.h AppGroup.m).each do |name|
+          Template.new(template(name)).call pod_path.join(name)
+        end
 
         add_to_targets pod_path.relative_path_from(root)
       end
