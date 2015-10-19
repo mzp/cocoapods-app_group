@@ -15,6 +15,11 @@ static NSString * const kAppIdentifier = @"<%= store.read :app_group %>";
     return [containerPath stringByAppendingPathComponent:subpath];
 }
 
++ (NSURL *)urlForResource:(NSString *)subpath {
+    NSURL *container = [[NSFileManager defaultManager] containerURLForSecurityApplicationGroupIdentifier:[self appGroupID]];
+    return [container URLByAppendingPathComponent:subpath];
+}
+
 + (NSUserDefaults*)userDefaults
 {
     return [[NSUserDefaults alloc] initWithSuiteName: [self appGroupID]];
