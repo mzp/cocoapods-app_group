@@ -13,10 +13,7 @@
   },
   "source": {
     "git": "https://github.com/mzp/cocoapods-app_group.git",
-    "tag": "0.1.0"
-  },
-  "user_target_xcconfig": {
-    "APP_IDENTIFIER": "jp.mzp.app_group.example"
+    "tag": "0.2.0"
   },
   "source_files": "*.{h,m,swift}",
   "frameworks": "Foundation",

@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: "/Users/mzp/git/cocoapods-app_group/Example/Pods/CocoaPodsAppGroup/"
 
 SPEC CHECKSUMS:
-  AppGroup: 84d115b29a4fcedfe0984fa316bdbfb7c2ddc8f9
+  AppGroup: 4b6211685d3b66af33e0a6717ec23ec1183fa824
 
-COCOAPODS: 0.38.2
+COCOAPODS: 0.39.0

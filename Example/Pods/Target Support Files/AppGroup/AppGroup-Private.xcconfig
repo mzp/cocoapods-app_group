@@ -1,6 +1,0 @@
-#include "AppGroup.xcconfig"
-GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/AppGroup" "${PODS_ROOT}/Headers/Public"
-OTHER_LDFLAGS = ${APPGROUP_OTHER_LDFLAGS}
-PODS_ROOT = ${SRCROOT}
-SKIP_INSTALL = YES
