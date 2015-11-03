@@ -2,13 +2,13 @@ PODS:
   - AppGroup (1.0.0)
 
 DEPENDENCIES:
-  - AppGroup (from `/Users/mzp/git/cocoapods-app_group/Example/Pods/CocoaPodsAppGroup/`)
+  - AppGroup (from `Pods/CocoaPodsAppGroup`)
 
 EXTERNAL SOURCES:
   AppGroup:
-    :path: "/Users/mzp/git/cocoapods-app_group/Example/Pods/CocoaPodsAppGroup/"
+    :path: Pods/CocoaPodsAppGroup
 
 SPEC CHECKSUMS:
-  AppGroup: 4b6211685d3b66af33e0a6717ec23ec1183fa824
+  AppGroup: 4dd06a5f93b4a1bd210a3c09e02356a55b68473e
 
 COCOAPODS: 0.39.0

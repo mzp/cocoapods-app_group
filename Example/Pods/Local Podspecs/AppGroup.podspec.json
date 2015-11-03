@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/mzp/cocoapods-app_group.git",
-    "tag": "0.2.0"
+    "tag": "0.3.0"
   },
   "source_files": "*.{h,m,swift}",
   "frameworks": "Foundation",
