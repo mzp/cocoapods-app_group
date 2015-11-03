@@ -15,9 +15,6 @@
     "git": "https://github.com/mzp/cocoapods-app_group.git",
     "tag": "<%= Cocoapods::AppGroup::VERSION %>"
   },
-  "user_target_xcconfig": {
-    "APP_IDENTIFIER": "<%= store.read :app_group %>"
-  },
   "source_files": "*.{h,m,swift}",
   "frameworks": "Foundation",
   "requires_arc": true

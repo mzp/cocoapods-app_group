@@ -6,6 +6,11 @@ module CocoaPods
         super
       end
 
+      def generate_pods_project
+        SetupXcconfig.new(self).call if enabled?
+        super
+      end
+
       private
 
       def enabled?
