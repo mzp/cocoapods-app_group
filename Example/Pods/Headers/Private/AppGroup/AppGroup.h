@@ -1,1 +1,1 @@
-../../../CocoaPodsAppGroup/AppGroup.h
+../../../AppGroup/templates/AppGroup.h

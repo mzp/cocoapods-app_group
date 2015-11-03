@@ -2,13 +2,13 @@ PODS:
   - AppGroup (1.0.0)
 
 DEPENDENCIES:
-  - AppGroup (from `Pods/CocoaPodsAppGroup`)
+  - AppGroup (from `Pods/CocoaPodsAppGroup/AppGroup.podspec.json`)
 
 EXTERNAL SOURCES:
   AppGroup:
-    :path: Pods/CocoaPodsAppGroup
+    :podspec: Pods/CocoaPodsAppGroup/AppGroup.podspec.json
 
 SPEC CHECKSUMS:
-  AppGroup: 4dd06a5f93b4a1bd210a3c09e02356a55b68473e
+  AppGroup: e2b8247a43e9381f825b247ac86cf5c930bf4f70
 
 COCOAPODS: 0.39.0

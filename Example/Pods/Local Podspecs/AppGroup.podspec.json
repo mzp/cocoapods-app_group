@@ -13,9 +13,9 @@
   },
   "source": {
     "git": "https://github.com/mzp/cocoapods-app_group.git",
-    "tag": "0.3.0"
+    "tag": "v0.4.1"
   },
-  "source_files": "*.{h,m,swift}",
+  "source_files": "templates/*.{h,m,swift}",
   "frameworks": "Foundation",
   "requires_arc": true
 }
