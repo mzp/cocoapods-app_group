@@ -13,9 +13,9 @@
   },
   "source": {
     "git": "https://github.com/mzp/cocoapods-app_group.git",
-    "tag": "<%= Cocoapods::AppGroup::VERSION %>"
+    "tag": "v<%= Cocoapods::AppGroup::VERSION %>"
   },
-  "source_files": "*.{h,m,swift}",
+  "source_files": "templates/*.{h,m,swift}",
   "frameworks": "Foundation",
   "requires_arc": true
 }

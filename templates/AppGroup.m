@@ -1,6 +1,8 @@
 #import "AppGroup.h"
 
-static NSString * const kAppIdentifier = @"<%= store.read :app_group %>";
+#define STR(x) @#x
+#define STR2(x) STR(x)
+static NSString * const kAppIdentifier = STR2(APP_IDENTIFIER);
 
 @implementation AppGroup
 

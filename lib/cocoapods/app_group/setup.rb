@@ -23,14 +23,14 @@ module CocoaPods
             end
 
             if pod_target
-              pod_target.store_pod 'AppGroup', path: pod_path.relative_path_from(Pathname.pwd).to_path
+              pod_target.store_pod 'AppGroup', podspec: podspec_path.relative_path_from(Pathname.pwd).to_path
             else
               Pod::UI.puts "Could not find a target named '#{target}' in your Podfile. Stopping keys".red
             end
           end
         else
           # otherwise let it go in global
-          podfile.pod 'AppGroup', path: pod_path.relative_path_from(Pathname.pwd).to_path
+          podfile.pod 'AppGroup', podspec: podspec_path.relative_path_from(Pathname.pwd).to_path
         end
       end
 
@@ -40,6 +40,10 @@ module CocoaPods
 
       def pod_path
         root.+('Pods/CocoaPodsAppGroup/')
+      end
+
+      def podspec_path
+        pod_path.join("AppGroup.podspec.json")
       end
 
       def template(name)
