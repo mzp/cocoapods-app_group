@@ -188,6 +188,7 @@
 					13B0ABFA1BB0070000891E04 = {
 						CreatedOnToolsVersion = 7.0;
 						DevelopmentTeam = VG2YYSKSHY;
+						LastSwiftMigration = 0810;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -356,6 +357,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jp.mzp.ReadFromAppGroup;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0.1;
 			};
 			name = Debug;
 		};
@@ -372,6 +374,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jp.mzp.ReadFromAppGroup;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0.1;
 			};
 			name = Release;
 		};
@@ -469,6 +472,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jp.mzp.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0.1;
 			};
 			name = Debug;
 		};
@@ -485,6 +489,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jp.mzp.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0.1;
 			};
 			name = Release;
 		};

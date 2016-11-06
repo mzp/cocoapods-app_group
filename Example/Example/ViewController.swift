@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         NSLog("%@", AppGroup.appGroupID())
-        AppGroup.userDefaults().setInteger(42, forKey: "answer")
+        AppGroup.userDefaults().set(42, forKey: "answer")
         // Do any additional setup after loading the view, typically from a nib.
     }
 
