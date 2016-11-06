@@ -3,4 +3,10 @@ platform :ios, '8.0'
 
 use_frameworks!
 
+target 'WriteToAppGroup' do
+end
+
+target 'ReadFromAppGroup' do
+end
+
 plugin 'cocoapods-app_group'
