@@ -19,10 +19,10 @@ gem install cocoapods-app_group
 Put followings to `Podfile`:
 
 ```ruby
-plugin 'cocoapods-app_group'
+target 'WriteToAppGroup'
+target 'ReadFromAppGroup'
 
-# or specify targets
-# plugin 'cocoapods-app_group', targets: ['Foo', 'Bar']
+plugin 'cocoapods-app_group'
 ```
 
 Then running `pod install` will prompt for the keys not yet set and you can ensure everyone has the same setup.

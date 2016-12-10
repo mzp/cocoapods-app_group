@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         NSLog("%@", AppGroup.appGroupID())
-        NSLog("%d", AppGroup.userDefaults().integerForKey("answer"))
+        NSLog("%d", AppGroup.userDefaults().integer(forKey: "answer"))
     }
 
     override func didReceiveMemoryWarning() {
